@@ -4,7 +4,7 @@
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/fxhxyz4/current-song/main)
 ![GitHub top language](https://img.shields.io/github/languages/top/:fxhxyz4/:current-song)
 ![GitHub Issues](https://img.shields.io/github/issues/fxhxyz4/current-song)
-![GitHub License](https://img.shields.io/github/license/fxhxyz4/current-song)
+![GitHub License](https://img.shields.io/badge/license-MIT-blue)
 
 
 
