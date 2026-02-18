@@ -23,7 +23,7 @@ const getTrackInfo = async () => {
   const trackData = await getCurrentTrack();
 
   if (!trackData || !trackData.item) {
-    return `${emoji} nothing playing`;
+    return `[LOG] ${emoji} nothing playing`;
   }
 
   const trackName = cleanTrackName(trackData.item.name);

@@ -28,6 +28,7 @@
   ],
   "license": "MIT",
   "scripts": {
+    "format": "prettier --write ./src/",
     "deploy": "node .",
     "dev": "nodemon .",
     "deploy-web": "gh-pages -d ./web/"
@@ -36,6 +37,7 @@
     "dotenv": "^17.2.3",
     "gh-pages": "^6.3.0",
     "input": "^1.0.1",
+    "prettier": "^3.8.1",
     "spotify-web-api-node": "^5.0.2",
     "telegram": "^2.26.22"
   },

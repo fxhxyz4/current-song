@@ -51,7 +51,7 @@ const server = http.createServer(async (req, res) => {
     }
 
     const basic = Buffer.from(`${SPOTIFY_ID}:${SPOTIFY_SECRET}`).toString(
-      "base64"
+      "base64",
     );
 
     const body = new URLSearchParams({
