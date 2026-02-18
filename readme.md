@@ -2,7 +2,7 @@
 [![Telegram](https://img.shields.io/badge/Telegram-26A5E4?style=flat&logo=telegram&logoColor=white)](https://t.me/femboyjs)
 [![Spotify](https://img.shields.io/badge/Spotify-1DB954?style=flat&logo=spotify&logoColor=white)](https://open.spotify.com/user/phkgo2oahrxcdb3p1u88f79oq?si=935a96da3c964540)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/fxhxyz4/current-song/main)
-![GitHub top language](https://img.shields.io/github/languages/top/:fxhxyz4/:current-song)
+![GitHub top language](https://img.shields.io/github/languages/top/fxhxyz4/current-song)
 ![GitHub Issues](https://img.shields.io/github/issues/fxhxyz4/current-song)
 ![GitHub License](https://img.shields.io/badge/license-MIT-blue)
 
