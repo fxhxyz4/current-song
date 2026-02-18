@@ -29,7 +29,8 @@
   "license": "MIT",
   "scripts": {
     "deploy": "node .",
-    "dev": "nodemon ."
+    "dev": "nodemon .",
+    "deploy-web": "gh-pages ./web/"
   },
   "dependencies": {
     "dotenv": "^17.2.3",
