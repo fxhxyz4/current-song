@@ -16,7 +16,7 @@ const requireEnv = (name) => {
   return env;
 };
 
-export const DEBUG = requireEnv("DEBUG") || "";
+export const DEBUG = process.env.DEBUG === "true";
 export const TELEGRAM_ID = requireEnv("TELEGRAM_ID") || "";
 export const TELEGRAM_HASH = requireEnv("TELEGRAM_HASH") || "";
 export const SPOTIFY_ID = requireEnv("SPOTIFY_ID") || "";
