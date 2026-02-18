@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Current Song → Telegram Bio</title>
+    <style>
+      :root {
+        --bg: #2f2f2f;
+        --fg: #00fff7;
+        --muted: rgba(255, 255, 255, 0.72);
+        --card: rgba(255, 255, 255, 0.06);
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family:
+          ui-sans-serif,
+          system-ui,
+          -apple-system,
+          Segoe UI,
+          Roboto,
+          Arial,
+          sans-serif;
+        background: var(--bg);
+        color: #fff;
+      }
+      .wrap {
+        max-width: 860px;
+        margin: 0 auto;
+        padding: 32px 18px 54px;
+      }
+      .title {
+        font-size: 28px;
+        font-weight: 800;
+        letter-spacing: 0.2px;
+        margin: 0 0 10px;
+      }
+      .subtitle {
+        margin: 0 0 22px;
+        color: var(--muted);
+        line-height: 1.55;
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid rgba(0, 255, 247, 0.18);
+        border-radius: 16px;
+        padding: 16px;
+      }
+      .row {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin: 12px 0 0;
+      }
+      a,
+      .accent {
+        color: var(--fg);
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      code,
+      pre {
+        font-family:
+          ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+          "Liberation Mono", "Courier New", monospace;
+      }
+      pre {
+        margin: 12px 0 0;
+        padding: 14px;
+        border-radius: 12px;
+        background: rgba(0, 0, 0, 0.25);
+        border: 1px solid rgba(0, 255, 247, 0.14);
+        overflow: auto;
+      }
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 12px;
+        border-radius: 999px;
+        border: 1px solid rgba(0, 255, 247, 0.22);
+        background: rgba(0, 255, 247, 0.06);
+        color: #fff;
+      }
+      .small {
+        font-size: 13px;
+        color: var(--muted);
+        margin-top: 12px;
+        line-height: 1.5;
+      }
+      .hr {
+        height: 1px;
+        background: rgba(0, 255, 247, 0.16);
+        margin: 16px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1 class="title">Current Song → Telegram Bio</h1>
+      <p class="subtitle">
+        <i>
+          Автоматично оновлює біо Telegram вашим поточним треком зі Spotify.<br />
+        </i>
+        Формат:
+        <span class="accent">📀 Track — Artist1, Artist2</span>
+      </p>
+
+      <div class="card">
+        <div class="row">
+          <a
+            class="pill"
+            href="https://t.me/femboyjs"
+            target="_blank"
+            rel="noreferrer noopener"
+            >Telegram</a
+          >
+          <a
+            class="pill"
+            href="https://open.spotify.com/user/phkgo2oahrxcdb3p1u88f79oq?si=935a96da3c964540"
+            target="_blank"
+            rel="noreferrer noopener"
+            >Spotify</a
+          >
+          <a
+            class="pill"
+            href="https://github.com/fxhxyz4/current-song"
+            target="_blank"
+            rel="noreferrer noopener"
+            >GitHub</a
+          >
+        </div>
+
+        <div class="hr"></div>
+
+        <div><b class="accent">Швидкий старт</b></div>
+        <pre>
+git clone https://github.com/fxhxyz4/current-song.git
+cd current-song
+
+npm install
+npm run dev
+</pre
+        >
+
+        <div class="hr"></div>
+
+        <div class="small">
+          <b class="accent">Потрібно налаштувати:</b><br />
+          1. Перейменуй <code>.env.example</code> → <code>.env</code> та заповни
+          змінні.
+          <br />
+          2. Файл <code>telegram.session</code> створиться в корені після
+          першого логіну — <b>не коміть його</b>. <br />3. Refresh token Spotify
+          отримується один раз:
+          <code>node ./src/utils/getRefreshToken.js</code>.
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

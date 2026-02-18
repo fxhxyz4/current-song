@@ -1,0 +1,48 @@
+{
+  "name": "current-song",
+  "version": "1.0.0",
+  "main": "./src/index.js",
+  "description": "Display current spotify song in telegram description",
+  "keywords": [
+    "spotify-api",
+    "telegram",
+    "axios"
+  ],
+  "type": "module",
+  "author": {
+    "name": "fxhxyz4",
+    "email": "fxhsec@proton.me",
+    "url": "https://fxhxyz.vercel.app"
+  },
+  "homepage": "https://github.com/fxhxyz4/current-song/",
+  "bugs": "https://github.com/fxhxyz4/current-song/issues",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/fxhxyz4/current-song.git"
+  },
+  "maintainers": [
+    {
+      "name": "fxhxyz4",
+      "email": "fxhsec@proton.me"
+    }
+  ],
+  "license": "MIT",
+  "scripts": {
+    "deploy": "node .",
+    "dev": "nodemon ."
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "gh-pages": "^6.3.0",
+    "input": "^1.0.1",
+    "spotify-web-api-node": "^5.0.2",
+    "telegram": "^2.26.22"
+  },
+  "devDependencies": {
+    "@fxhxyz/prettier-config": "^2.0.8",
+    "nodemon": "^3.1.11"
+  },
+  "engines": {
+    "node": "25.x"
+  }
+}
